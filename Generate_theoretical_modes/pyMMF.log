@@ -27181,3 +27181,243 @@ TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
 2022-04-15 21:07:01,139 - pyMMF.solv [INFO   ]  Finding analytical LP mode profiles associated to the propagation constants.
 2022-04-15 21:07:04,063 - pyMMF.solv [INFO   ]  Found 55 LP mode profiles in 0.0 minutes.
 2022-04-15 21:07:04,063 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:18:49,919 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:18:49,919 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:18:49,919 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:19:01,621 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.70 seconds.
+2022-04-15 21:19:01,621 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:24:57,660 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:24:57,660 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:24:57,660 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:25:23,941 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:25:23,941 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:25:23,941 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:25:47,146 - pyMMF.solv [INFO   ]  Solver found 53 modes is 23.21 seconds.
+2022-04-15 21:25:47,146 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:25:47,146 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:25:47,146 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:25:59,239 - pyMMF.solv [INFO   ]  Solver found 48 modes is 12.09 seconds.
+2022-04-15 21:25:59,239 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:26:26,136 - pyMMF.core [ERROR  ]  Uncaught exception
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\pyMMF\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "E:\PyCharm\PyCharm Community Edition 2021.1.3\plugins\python-ce\helpers\pydev\_pydev_bundle\pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "E:\PyCharm\PyCharm Community Edition 2021.1.3\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "F:\project\多模\ws_operator\Generate_theoretical_modes\Generate_modes_SI_bend.py", line 61, in <module>
+    betas_bent2,profiles_bent2 = modes_straight.getCurvedModes(npola = 1,curvature=curvature)
+  File "F:\project\多模\ws_operator\pyMMF\modes.py", line 239, in getCurvedModes
+    B = self.getEvolutionOperator(npola = npola,curvature = curvature)
+  File "F:\project\多模\ws_operator\pyMMF\modes.py", line 218, in getEvolutionOperator
+    B = B - n_min*k0*(1./curvature[0]*Gamma_x+1./curvature[1]*Gamma_y)
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+2022-04-15 21:31:37,543 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:31:37,543 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:31:37,563 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:32:05,849 - pyMMF.solv [INFO   ]  Solver found 53 modes is 28.31 seconds.
+2022-04-15 21:32:05,852 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:32:05,857 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:32:05,858 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:32:19,606 - pyMMF.solv [INFO   ]  Solver found 48 modes is 13.75 seconds.
+2022-04-15 21:32:19,606 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:41:00,328 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:41:00,328 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:41:00,328 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:41:23,394 - pyMMF.solv [INFO   ]  Solver found 75 modes is 23.07 seconds.
+2022-04-15 21:41:23,394 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 21:41:23,394 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 21:41:23,394 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:41:23,394 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 21:41:23,394 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 21:41:39,467 - pyMMF.solv [INFO   ]  Solver found 48 modes is 16.07 seconds.
+2022-04-15 21:41:39,467 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:02:05,710 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:02:05,710 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:02:05,710 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:02:28,364 - pyMMF.solv [INFO   ]  Solver found 75 modes is 22.65 seconds.
+2022-04-15 22:02:28,364 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:02:28,364 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:02:28,374 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:02:28,374 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:02:28,374 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:02:40,647 - pyMMF.solv [INFO   ]  Solver found 52 modes is 12.27 seconds.
+2022-04-15 22:02:40,647 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:03:50,914 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:03:50,914 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:03:50,914 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:04:13,518 - pyMMF.solv [INFO   ]  Solver found 75 modes is 22.60 seconds.
+2022-04-15 22:04:13,518 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:04:13,527 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:04:13,527 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:04:13,527 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:04:13,527 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:04:16,738 - pyMMF.solv [INFO   ]  Solver found 0 modes is 3.21 seconds.
+2022-04-15 22:04:16,738 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:04:16,878 - pyMMF.core [ERROR  ]  Uncaught exception
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\pyMMF\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "E:\PyCharm\PyCharm Community Edition 2021.1.3\plugins\python-ce\helpers\pydev\_pydev_bundle\pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "E:\PyCharm\PyCharm Community Edition 2021.1.3\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "F:\project\多模\ws_operator\Generate_theoretical_modes\Generate_modes_SI_bend.py", line 58, in <module>
+    profiles_bent = modes_bent.getModeMatrix()
+  File "F:\project\多模\ws_operator\pyMMF\modes.py", line 64, in getModeMatrix
+    assert(self.profiles)
+AssertionError
+2022-04-15 22:04:52,530 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:04:52,530 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:04:52,530 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:05:15,744 - pyMMF.solv [INFO   ]  Solver found 75 modes is 23.21 seconds.
+2022-04-15 22:05:15,744 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:05:15,744 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:05:15,744 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:05:15,744 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:05:15,754 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:05:27,266 - pyMMF.solv [INFO   ]  Solver found 41 modes is 11.52 seconds.
+2022-04-15 22:05:27,266 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:06:41,289 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:06:41,289 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:06:41,289 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:07:04,144 - pyMMF.solv [INFO   ]  Solver found 75 modes is 22.85 seconds.
+2022-04-15 22:07:04,144 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:07:04,144 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:07:04,144 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:07:04,154 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:07:04,154 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:07:17,362 - pyMMF.solv [INFO   ]  Solver found 52 modes is 13.21 seconds.
+2022-04-15 22:07:17,362 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:08:50,290 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:08:50,290 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:08:50,290 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:09:12,874 - pyMMF.solv [INFO   ]  Solver found 75 modes is 22.58 seconds.
+2022-04-15 22:09:12,874 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:09:12,874 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:09:12,874 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:09:12,874 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:09:12,874 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:09:24,505 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.63 seconds.
+2022-04-15 22:09:24,505 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:09:24,505 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:09:24,505 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:10:12,324 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:10:12,334 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:10:12,334 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:10:34,642 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.31 seconds.
+2022-04-15 22:10:34,652 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:10:34,652 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:10:34,652 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:10:46,244 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.59 seconds.
+2022-04-15 22:10:46,244 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:10:46,244 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:10:46,254 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:14:03,298 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:14:03,298 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:14:03,298 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:14:26,626 - pyMMF.solv [INFO   ]  Solver found 53 modes is 23.33 seconds.
+2022-04-15 22:14:26,626 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:14:26,626 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:14:26,626 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:14:38,218 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.59 seconds.
+2022-04-15 22:14:38,218 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:14:38,218 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:14:38,218 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:15:24,768 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:15:24,768 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:15:24,768 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:15:47,235 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.47 seconds.
+2022-04-15 22:15:47,235 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:15:47,235 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:15:47,235 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:15:59,032 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.80 seconds.
+2022-04-15 22:15:59,032 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:15:59,032 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:15:59,042 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:18:14,862 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:18:14,862 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:18:14,862 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:18:38,206 - pyMMF.solv [INFO   ]  Solver found 53 modes is 23.34 seconds.
+2022-04-15 22:18:38,216 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:18:38,216 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:18:38,216 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:18:49,948 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.73 seconds.
+2022-04-15 22:18:49,948 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:18:49,948 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:18:49,948 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:19:56,458 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:19:56,458 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:19:56,458 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:20:18,751 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.29 seconds.
+2022-04-15 22:20:18,751 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:20:18,751 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:20:18,751 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:20:30,323 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.57 seconds.
+2022-04-15 22:20:30,323 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:20:30,323 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:20:30,323 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:22:54,339 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:22:54,339 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:22:54,339 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:23:17,038 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.70 seconds.
+2022-04-15 22:23:17,038 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:23:17,038 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:23:17,038 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:23:28,682 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.64 seconds.
+2022-04-15 22:23:28,682 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:23:28,682 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:23:28,682 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:27:23,100 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:27:23,100 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:27:23,100 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:27:45,504 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.40 seconds.
+2022-04-15 22:27:45,504 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:27:45,504 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:27:45,504 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:27:57,015 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.51 seconds.
+2022-04-15 22:27:57,015 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:27:57,015 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:27:57,025 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:28:46,769 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:28:46,769 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:28:46,769 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:29:09,931 - pyMMF.solv [INFO   ]  Solver found 53 modes is 23.16 seconds.
+2022-04-15 22:29:09,931 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:29:09,931 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:29:09,931 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:29:21,165 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.23 seconds.
+2022-04-15 22:29:21,165 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:29:21,165 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:29:21,165 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:32:26,501 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:32:26,511 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:32:26,511 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:33:05,627 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:33:05,627 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:33:05,627 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:33:27,971 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.34 seconds.
+2022-04-15 22:33:27,971 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:33:27,971 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:33:27,971 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:33:39,023 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.05 seconds.
+2022-04-15 22:33:39,023 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:33:39,023 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:33:39,023 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:37:02,768 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:37:02,768 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:37:02,768 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:37:21,752 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 22:37:21,752 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:37:21,752 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:37:44,121 - pyMMF.solv [INFO   ]  Solver found 53 modes is 22.37 seconds.
+2022-04-15 22:37:44,131 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 22:37:44,131 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-15 22:37:44,131 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-15 22:37:53,602 - pyMMF.solv [INFO   ]  Solver found 53 modes is 9.47 seconds.
+2022-04-15 22:37:53,602 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-15 22:37:53,602 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-15 22:37:53,602 - pyMMF.core [DEBUG  ]  Mode data stored in memory.

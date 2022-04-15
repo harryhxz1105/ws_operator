@@ -14,10 +14,10 @@ n_points = 128 # resolution of the window
 n1 = 1.45 # index of refraction at r=0 (maximum)
 wl = 1.064 # wavelength in microns
 # curvature = None
-curvature = [2e4,None]
+curvature = [4e3,None]   # in microns
 k0 = 2.* np.pi/wl
 # solver parameters
-degenerate_mode = 'exp'
+degenerate_mode = 'sin'
 
 
 ## Simulate a graded index fiber
@@ -37,22 +37,34 @@ print(f"Estimated number of modes using the V number = {Nmodes_estim}")
 
 
 # Numerical calculations for the straight fiber
-modes_straight = solver.solve(nmodesMax=Nmodes_estim+20,boundary = 'close', mode = 'eig', curvature = None, degenerate_mode=degenerate_mode)
+modes_straight = solver.solve(nmodesMax=Nmodes_estim+20,
+                              boundary = 'close',
+                              mode = 'eig',
+                              curvature = None,
+                              degenerate_mode=degenerate_mode)
 Nmodes = sum(modes_straight.propag) # Compute for the bent fiber the same number of modes as for the straight one
 modes_straight.sort()
 
+"----------------------------方法1：直接计算弯曲光纤模式-----------------------"
 # Numerical calculation for the bent fiber - Method 1
-modes_bent = solver.solve(nmodesMax=Nmodes,boundary = 'close', mode = 'eig', curvature = curvature, degenerate_mode=degenerate_mode,)
+modes_bent = solver.solve(nmodesMax=Nmodes,
+                          boundary = 'close',
+                          mode = 'eig',
+                          curvature = curvature,
+                          degenerate_mode=degenerate_mode,
+                          propag_only=False)
 modes_bent.sort()
 betas_bent = modes_bent.betas
 profiles_bent = modes_bent.getModeMatrix()
-# 保存数据
-Modes = profiles_bent.T  # 模式阵
 
-# # Numerical calculation for the bent fiber - Method 2
+"----------------------------方法2：通过直光纤模式，计算弯曲光纤模式-----------------------"
+# Numerical calculation for the bent fiber - Method 2
 # betas_bent2,profiles_bent2 = modes_straight.getCurvedModes(npola = 1,curvature=curvature)
 # betas_bent2,profiles_bent2 = betas_bent2[:Nmodes],profiles_bent2[:,:Nmodes]
 
+
+# 保存数据
+Modes = profiles_bent.T  # 模式阵
 
 # save data
 params = {}
@@ -67,18 +79,19 @@ params['k0'] = k0
 params['degenerate_mode'] = degenerate_mode
 params['mode'] = 'SI'
 
-np.savez('SI_PIM_55_[2e4,None]', Modes = Modes, params = params, betas = modes_bent.betas, M = modes_bent.m, L = modes_bent.l)
+np.savez('SI_PIM_53_[4e3,None]', Modes = Modes, params = params, betas = modes_bent.betas, M = modes_bent.m, L = modes_bent.l)
 
 
 # Show some modes
 i_modes = [0,1,5,10,15,25,35]
 
-for i in i_modes:
-    Mi = Modes[i,...]
-    profile = Mi.reshape([n_points]*2)
-    plt.figure(figsize = (4,4))
-    plt.imshow(colorize(profile,'white'))
-    plt.axis('off')
-    #plt.title(f'Mode {i} (l={modes.l[i]}, m={modes.m[i]})')
-    # save figure
-    # plt.savefig(f'mode_{i}.svg')
+# for i in i_modes:
+#     Mi = Modes[i,...]
+#     profile = Mi.reshape([n_points]*2)
+#     plt.figure(figsize = (4,4))
+#     # plt.imshow(colorize(profile,'white'))
+#     plt.imshow(np.abs(profile))
+#     plt.axis('off')
+#     # plt.title(f'Mode {i} (l={modes.l[i]}, m={modes.m[i]})')
+#     # save figure
+#     # plt.savefig(f'mode_{i}.svg')
