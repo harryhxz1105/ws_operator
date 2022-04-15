@@ -27175,3 +27175,9 @@ TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
 2022-04-15 20:15:34,276 - pyMMF.solv [INFO   ]  Use close boundary condition.
 2022-04-15 20:15:45,200 - pyMMF.solv [INFO   ]  Solver found 53 modes is 10.92 seconds.
 2022-04-15 20:15:45,200 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-15 21:07:00,447 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-15 21:07:00,487 - pyMMF.solv [INFO   ]  Finding the propagation constant of step index fiber by numerically solving the dispersion relation.
+2022-04-15 21:07:01,139 - pyMMF.solv [INFO   ]  Found 55 modes in 0.65 seconds.
+2022-04-15 21:07:01,139 - pyMMF.solv [INFO   ]  Finding analytical LP mode profiles associated to the propagation constants.
+2022-04-15 21:07:04,063 - pyMMF.solv [INFO   ]  Found 55 LP mode profiles in 0.0 minutes.
+2022-04-15 21:07:04,063 - pyMMF.core [DEBUG  ]  Mode data stored in memory.

@@ -31,7 +31,7 @@ solver = pyMMF.propagationModeSolver()
 solver.setIndexProfile(profile)
 solver.setWL(wl)
 modes = solver.solve(nmodesMax=Nmodes_estim+20,
-                    mode='SI',
+                    mode='eig',
                     curvature = None,
                     degenerate_mode = degenerate_mode,
                     )
@@ -63,6 +63,6 @@ for i in i_modes:
     plt.figure(figsize = (4,4))
     plt.imshow(np.abs(profile))
     plt.axis('off')
-    #plt.title(f'Mode {i} (l={modes.l[i]}, m={modes.m[i]})')
+    # plt.title(f'Mode {i} (l={modes.l[i]}, m={modes.m[i]})')
     # save figure
-    plt.savefig(f'mode_{i}.svg')
+    # plt.savefig(f'mode_{i}.svg')
