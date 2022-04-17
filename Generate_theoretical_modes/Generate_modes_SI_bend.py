@@ -10,11 +10,11 @@ data_folder = "C:/project/多模/fiber_speckle_analysis_python/Generate_theoreti
 NA = 0.1
 radius = 25 # in microns
 areaSize = 2*radius # calculate the field on an area larger than the diameter of the fiber
-n_points = 128 # resolution of the window
+n_points = 100 # resolution of the window
 n1 = 1.45 # index of refraction at r=0 (maximum)
 wl = 1.064 # wavelength in microns
 # curvature = None
-curvature = [4e3,None]   # in microns
+curvature = [2e4,None]   # in microns
 k0 = 2.* np.pi/wl
 # solver parameters
 degenerate_mode = 'sin'
@@ -79,7 +79,7 @@ params['k0'] = k0
 params['degenerate_mode'] = degenerate_mode
 params['mode'] = 'SI'
 
-np.savez('SI_PIM_53_[4e3,None]', Modes = Modes, params = params, betas = modes_bent.betas, M = modes_bent.m, L = modes_bent.l)
+np.savez(f"SI_PIM_53_{curvature}", Modes = Modes, params = params, betas = modes_bent.betas, M = modes_bent.m, L = modes_bent.l)
 
 
 # Show some modes
