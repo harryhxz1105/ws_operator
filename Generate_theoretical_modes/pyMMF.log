@@ -27421,3 +27421,14 @@ AssertionError
 2022-04-15 22:37:53,602 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
 2022-04-15 22:37:53,602 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
 2022-04-15 22:37:53,602 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-17 22:07:38,635 - pyMMF.core [DEBUG  ]  Debug mode ON.
+2022-04-17 22:07:38,708 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-17 22:07:38,709 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-17 22:07:49,801 - pyMMF.solv [INFO   ]  Solver found 53 modes is 11.09 seconds.
+2022-04-17 22:07:49,802 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
+2022-04-17 22:07:49,803 - pyMMF.solv [INFO   ]  Solving the spatial eigenvalue problem for mode finding.
+2022-04-17 22:07:49,804 - pyMMF.solv [INFO   ]  Use close boundary condition.
+2022-04-17 22:07:54,561 - pyMMF.solv [INFO   ]  Solver found 53 modes is 4.76 seconds.
+2022-04-17 22:07:54,561 - pyMMF.solv [WARNING]  The solver reached the maximum number of modes set.
+2022-04-17 22:07:54,663 - pyMMF.solv [WARNING]  Some propagating modes may be missing.
+2022-04-17 22:07:54,664 - pyMMF.core [DEBUG  ]  Mode data stored in memory.
